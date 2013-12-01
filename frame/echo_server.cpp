@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
         int iAddrLen = sizeof(stSvrSockAddr);
         
         char buff[4096];
-        sprintf(buff, "wangruining");
+        sprintf(buff, "testtest");
         int len = strlen(buff);
         int ret = gframe.SendUdp(ECHO_SERVER, &stSvrSockAddr, buff, len);
         fprintf(stdout, "send data=%d ret=%d\n", len, ret);
